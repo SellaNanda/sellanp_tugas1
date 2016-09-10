@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl3033.sellanp_tugas01.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="SM Entertainment"
+        android:textColor="#9ee0009d"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/checkBoxDance"
+        android:layout_toStartOf="@+id/checkBoxDance"
+        android:text="Nama     "
+        android:textColor="#9ee0009d"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextNM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textViewNama"
+        android:layout_toEndOf="@+id/textViewNama" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNM"
+        android:layout_toLeftOf="@+id/editTextNM"
+        android:layout_toStartOf="@+id/editTextNM"
+        android:text="Keahlian"
+        android:textColor="#9ee0009d"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:text="Vocal" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:checked="false"
+        android:text="Dance" />
+
+    <CheckBox
+        android:id="@+id/checkBoxActing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxDance"
+        android:layout_toEndOf="@+id/checkBoxDance"
+        android:layout_toRightOf="@+id/checkBoxDance"
+        android:checked="false"
+        android:text="Acting" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBoxActing"
+        android:layout_toEndOf="@+id/checkBoxActing"
+        android:layout_toRightOf="@+id/checkBoxActing"
+        android:checked="false"
+        android:text="Composer" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_marginTop="51dp"
+        android:text="Debut for"
+        android:textColor="#9ee0009d"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonOK"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/buttonOK"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignStart="@+id/buttonOK"
+        android:layout_below="@+id/checkBoxDance">
+
+        <RadioButton
+            android:id="@+id/radioButtonSolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Solo" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Group" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Actor/Actress" />
+
+        <RadioButton
+            android:id="@+id/radioButtonModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Model" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="34dp"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textViewHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#9ee0009d"
+        tools:text="Keputusan Anda" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonOK"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Asal"
+        android:textColor="#9ee0009d"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonOK"
+        android:layout_alignEnd="@+id/buttonOK"
+        android:layout_alignRight="@+id/buttonOK"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/textView3"
+        android:entries="array/asal" />
+
+</RelativeLayout>
