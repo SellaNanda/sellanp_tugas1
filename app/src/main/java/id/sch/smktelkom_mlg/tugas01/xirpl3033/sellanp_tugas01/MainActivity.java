@@ -70,6 +70,6 @@ public class MainActivity extends AppCompatActivity {
         if (cbActing.isChecked()) ahli += cbActing.getText() + "\n";
         if (cbCP.isChecked()) ahli += cbCP.getText() + "\n";
         if (ahli.length() == startlen) ahli += "Pilih keahlian anda";
-        tvHasil.setText("Selamat datang " + nama + "memiliki keahlian " + ahli + "Negara asal " + spAsal.getSelectedItem().toString());
+        tvHasil.setText("Selamat datang " + nama + "\n Anda berkeinginan debut sebagai " + hasil + "\nNegara asal " + spAsal.getSelectedItem().toString());
     }
 }
