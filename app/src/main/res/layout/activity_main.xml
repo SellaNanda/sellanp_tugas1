@@ -191,6 +191,6 @@
         android:layout_alignRight="@+id/buttonOK"
         android:layout_alignTop="@+id/textView4"
         android:layout_toRightOf="@+id/textView3"
-        android:entries="array/asal" />
+        android:entries="@array/asal" />
 
 </RelativeLayout>
