@@ -59,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
         }
         if (hasil == null) {
             tvHasil.setText("Pilih keinginan debut anda");
-        } else {
-            tvHasil.setText("Anda berkeinginan debut untuk menjadi " + hasil);
         }
 
         String ahli = "Anda memilh keahlian : \n";
